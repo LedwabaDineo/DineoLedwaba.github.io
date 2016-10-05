@@ -143,17 +143,17 @@ p span {
     display: block;
     text-shadow: 0 0 60px rgba(255, 255, 255, 0.5);
     background: #ff0084;
-    background: -webkit-linear-gradient(left, #ffffff 0%, darkgoldenrod 100%);
-    background: linear-gradient(to right, darkgoldenrod 0%, #ffffff 100%);
+    background: -webkit-linear-gradient(left, #ffffff 0%, #000000 100%);
+    background: linear-gradient(to right, #000000 0%, #ffffff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 @media screen and (max-width: 376px) {
     p span {
-        font-size: 30px;
+        font-size: 27px;
+        margin-left: -31px;
         font-weight: 700;
-
     }
 }
 

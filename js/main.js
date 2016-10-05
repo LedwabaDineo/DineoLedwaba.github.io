@@ -63,7 +63,7 @@ var hc_reactor = {
         this.ctx = this.canvas.getContext('2d');
         // Animation is stopping after a while
         this.step = 0;
-        this.steps = 2000;
+        this.steps = 1000;
 
         // Variable 1
         this.var1 = 0;
