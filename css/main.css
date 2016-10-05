@@ -92,19 +92,79 @@ textarea {
     padding: 0.2em 0;
 }
 
+#container{
+    position: absolute;
+}
+/*.first-page{*/
+
+    /*position: absolute;*/
+    /*z-index: 99;*/
+    /*top: 40px;*/
+    /*font-size: 20px;*/
+    /*font-family: 'Amatica SC', cursive;*/
+    /*color: #ffffff;*/
+/*}*/
+
+
+.first-page {
+    z-index: 99;
+    position: absolute;
+
+    color: #404040;
+    text-align: center;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+p {
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    display: block;
+    border-left: 0;
+    border-right: 0;
+    padding: 1.5em 0em;
+}
+p span {
+    font-size: 4em;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 0.3em 0;
+    display: block;
+    text-shadow: 0 0 60px rgba(255, 255, 255, 0.5);
+    background: #ff0084;
+    background: -webkit-linear-gradient(left, #ffffff 0%, darkgoldenrod 100%);
+    background: linear-gradient(to right, darkgoldenrod 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 376px) {
+    p span {
+        font-size: 30px;
+        font-weight: 700;
+
+    }
+}
+
+
 /* ==========================================================================
    nav bar
    ========================================================================== */
 
-body {
-    padding-top: 50px;
-    position: relative;
-}
-
 pre {
     tab-size: 8;
 }
-
 @media screen and (max-width: 768px) {
     .side-collapse-container{
         width:100%;
@@ -141,18 +201,18 @@ hr.style15 {
     border-top: 4px double #8c8b8b;
     text-align: center;
 }
-.first-page {
-    display:block;
-    position:absolute;
-    background: url("../img/Dineo_Grad.jpg") ;
-    background-size:  cover;                      /* <------ */
-    background-repeat:  no-repeat;
-    background-position: center center;
-    /*background-repeat:no-repeat;*/
-    /*background-size: 100% 100%;*/
-    width:100%;
-    height:100%;
-}
+/*.first-page {*/
+    /*display:block;*/
+    /*position:absolute;*/
+    /*background: url("../img/Dineo_Grad.jpg") ;*/
+    /*background-size:  cover;                      !* <------ *!*/
+    /*background-repeat:  no-repeat;*/
+    /*background-position: center center;*/
+    /*!*background-repeat:no-repeat;*!*/
+    /*!*background-size: 100% 100%;*!*/
+    /*width:100%;*/
+    /*height:100%;*/
+/*}*/
 .first-page:before {
     content: '';
     position: absolute;
@@ -164,21 +224,6 @@ hr.style15 {
     opacity: .5;
 }
 
-body, html {
-    margin: 100px;
-    background-color: black;
-}
-
-canvas {
-    display: block;
-}
-
-/**
- * CSS for Hartcore
- * Alexandre Andrieux @2015
- */
-
-*,
 body,
 html {
     margin: 0;
@@ -203,10 +248,11 @@ html,
 body {
     height: 100%;
     width: 100%;
-    background: rgba(250,250,250,1);
+    /*background: rgba(250,250,250,1);*/
 }
 canvas {
     z-index: 0;
+    position: absolute;
 }
 #black {
     z-index: 0;
